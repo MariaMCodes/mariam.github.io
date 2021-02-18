@@ -46,5 +46,15 @@ shinyApp(ui=ui, server=server) # to run the app in RStudio and open in browser
 
 
 ## To create the static website on github page
+# See website: https://www.r-bloggers.com/2020/04/build-a-static-website-with-r-shiny/
+
+
+## To publish app using Shinyapps.io
+library(rsconnect)
+
+rsconnect::setAccountInfo(name='mariam04', token='7C09F935D34A5FF83DF8D355BF942428', secret='rAehTLprqAqbmNx2TH+Ng3mY7lcaGyQ2KyIN5vaU')
+library(rsconnect)
+rsconnect::deployApp('/Users/mariamempin/anaconda3/pkgs/r-formatr-1.6-r36h6115d3f_0/lib/R/library/formatR/shiny/app/mariam.github.io')
+
 
 
