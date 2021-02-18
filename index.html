@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <script type="application/shiny-singletons"></script>
+  <script type="application/html-dependencies">jquery[3.5.1];shiny-css[1.6.0];shiny-javascript[1.6.0];bootstrap[3.4.1]</script>
+<script src="shared/jquery.min.js"></script>
+<link href="shared/shiny.min.css" rel="stylesheet" />
+<script src="shared/shiny.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="shared/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<link href="shared/bootstrap/accessibility/css/bootstrap-accessibility.min.css" rel="stylesheet" />
+<script src="shared/bootstrap/js/bootstrap.min.js"></script>
+<script src="shared/bootstrap/accessibility/js/bootstrap-accessibility.min.js"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3">
+        <form class="well" role="complementary">
+          <h2>My Static Website</h2>
+          <h3>Internal link example</h3>
+          <a href="#birds">
+            <h4>Birds</h4>
+          </a>
+          <hr/>
+          <h3>External link example</h3>
+          <a href="https://en.wikipedia.org/wiki/Main_Page" target="blank">
+            <h4>Wikipedia</h4>
+          </a>
+        </form>
+      </div>
+      <div class="col-sm-9" role="main">
+        <h2>Link to a saved sample.html</h2>
+        <p>The url is https://johndoe.github.io/samples/sample.html</p>
+        <a href="https://johndoe.github.io/samples/sample.html" target="blank">
+          <h3>Lovely Birds</h3>
+        </a>
+        <hr/>
+        <h2 id="birds">Text and image example</h2>
+        <div class="row">
+          <div class="col-sm-7"><p>Use <code>includeMarkdown(&quot;path/to/birds.Rmd&quot;)</code> to include large chunks of text to keep <code>ui.R</code> more readable.</p>
+
+<p>Image files are placed in subdirecotry <code>www/</code> and insert an image with <code>img(src = &quot;birds.png&quot;)</code>.</p>
+</div>
+          <div class="col-sm-5">
+            <img src="images/birds.png" width="100%"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
