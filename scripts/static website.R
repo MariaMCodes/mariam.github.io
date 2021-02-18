@@ -18,9 +18,9 @@ ui <- fluidPage(
     mainPanel(
       width = 9,
       h2("Link to a saved sample.html"),
-      p("The url is https://johndoe.github.io/samples/sample.html"),
+      p("The url is https://mariam.github.io/samples/sample.html"),
       a(h3("Lovely Birds"),
-        href = "https://johndoe.github.io/samples/sample.html",
+        href = "https://mariam.github.io/samples/sample.html",
         target = "blank"),
       hr(),
       h2("Text and image example", id = "birds"),
@@ -42,3 +42,9 @@ ui <- fluidPage(
 server <- function(input, output) {
   # empty
 }
+shinyApp(ui=ui, server=server) # to run the app in RStudio and open in browser
+
+
+## To create the static website on github page
+
+
